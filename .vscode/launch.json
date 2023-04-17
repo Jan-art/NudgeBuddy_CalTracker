@@ -6,17 +6,20 @@
   "configurations": [
     {
       "name": "NB_V3",
+      "cwd": "NB_V3",
       "request": "launch",
       "type": "dart"
     },
     {
       "name": "NB_V3 (profile mode)",
+      "cwd": "NB_V3",
       "request": "launch",
       "type": "dart",
       "flutterMode": "profile"
     },
     {
       "name": "NB_V3 (release mode)",
+      "cwd": "NB_V3",
       "request": "launch",
       "type": "dart",
       "flutterMode": "release"
