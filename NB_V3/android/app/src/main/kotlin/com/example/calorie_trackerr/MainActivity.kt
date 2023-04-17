@@ -1,4 +1,4 @@
-package com.calorietrackerr.app
+package com.NudgeBuddy.app
 
 import io.flutter.embedding.android.FlutterActivity
 
