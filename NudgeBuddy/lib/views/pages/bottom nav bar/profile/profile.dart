@@ -26,14 +26,23 @@ class ProfilePage extends GetWidget<AuthController> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.white,
+        backgroundColor: Color.fromARGB(255, 255, 255, 255),
         elevation: 0,
         foregroundColor: Colors.black,
         title: const Text('PROFILE'),
         actions: [
-          TextButton(
+          Container(
+            width: 80,
+            height: 30,
+          //   decoration: BoxDecoration(
+          //       color: Color.fromARGB(255, 200, 200, 200),
+          //       borderRadius: BorderRadius.circular(12),
+          // ),
+          child: TextButton(
               onPressed: () => controller.onSignout(),
-              child: const Text('Logout'))
+              child: const Text('LOGOUT')
+            ),
+          ),
         ],
       ),
       body: Center(

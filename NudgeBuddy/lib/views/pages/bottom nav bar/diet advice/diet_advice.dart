@@ -20,7 +20,7 @@ class DietAdvicePage extends StatelessWidget {
         backgroundColor: Colors.white,
         elevation: 0,
         foregroundColor: Colors.black,
-        title: const Text('Diet Advice'),
+        title: const Text('NUTRITION FACTS'),
       ),
       body: ListView.builder(
           itemCount: dietAvices.length,

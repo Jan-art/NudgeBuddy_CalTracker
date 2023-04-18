@@ -52,7 +52,7 @@ class _StatsPageState extends State<StatsPage> {
                 //WEIGHT GRAPH
                 SizedBox(height: SizeConfig.heightMultiplier * 1),
                 Text(
-                  'Weight Progress',
+                  'WEIGHT OVERVIEW',
                   style: TextStyle(
                       fontWeight: FontWeight.w500,
                       fontSize: SizeConfig.textMultiplier * 2),
@@ -91,7 +91,7 @@ class _StatsPageState extends State<StatsPage> {
                 //CALORIE GRAPH
 
                 Text(
-                  'Calories consumed over time',
+                  'CALORIES OVERVIEW',
                   style: TextStyle(
                       fontWeight: FontWeight.w500,
                       fontSize: SizeConfig.textMultiplier * 2),
@@ -110,7 +110,7 @@ class _StatsPageState extends State<StatsPage> {
                         ? SizedBox(
                             height: SizeConfig.heightMultiplier * 30,
                             child: const Center(
-                              child: Text('No calorie data'),
+                              child: Text('No caloric data available'),
                             ),
                           )
                         : Graph(

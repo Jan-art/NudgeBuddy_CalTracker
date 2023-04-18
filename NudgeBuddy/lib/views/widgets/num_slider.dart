@@ -53,7 +53,7 @@ class NumSlider extends StatelessWidget {
                             ? 'Select Age'
                             : isWeight
                                 ? isGoalWeight
-                                    ? 'Select Weight Goal'
+                                    ? 'Select Weight' //IF GOAL WEIGHT IS SELECTED
                                     : "Select Weight"
                                 : "Select Height",
                         style: TextStyle(

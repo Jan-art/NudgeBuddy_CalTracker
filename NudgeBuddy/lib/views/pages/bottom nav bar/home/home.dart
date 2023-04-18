@@ -49,7 +49,7 @@ class HomePage extends StatelessWidget {
               child: Row(
                 children: [
                   Text(
-                    'Daily Meals',
+                    'DAILY MEALS',
                     style: TextStyle(
                         fontWeight: FontWeight.w500,
                         fontSize: SizeConfig.textMultiplier * 1.9),

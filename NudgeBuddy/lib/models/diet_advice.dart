@@ -21,7 +21,7 @@ class DietModel {
         articleURL: 'https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4960974',
         desciption:
             'A balanced diet that includes a mix of carbohydrates, proteins, and fats is essential for optimal health. Carbohydrates are the main source of energy for the body, and proteins are essential for building and repairing tissues. Fats are important for energy and hormone production. Consuming too much of any one macronutrient can lead to health problems, and a balanced intake is necessary for optimal health. For example, a diet that is too high in saturated fat can increase the risk of heart disease, while a diet that is too low in carbohydrates can lead to fatigue and decreased mental function.  ',
-        title: 'Importance of balanced macronutrient intake'),
+        title: 'Balanced macronutrient intake'),
     DietModel(
         image: 'assets/dietadvice/Portions-min.jpg',
         articleText:

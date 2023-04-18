@@ -37,14 +37,14 @@ class _NotificationsPageState extends State<NotificationsPage> {
         actions: [
           TextButton(
               onPressed: () => Get.dialog(AddNotificationDialog()),
-              child: const Text('Set'))
+              child: const Text('SET'))
         ],
       ),
       body: Obx(
         () => cont.getNotifies == null
             ? LoadingWidget(height: SizeConfig.heightMultiplier * 80)
             : cont.getNotifies!.isEmpty
-                ? const Center(child: Text('No Notifications'))
+                ? const Center(child: Text('No notifications set'))
                 : ListView.builder(
                     itemCount: cont.getNotifies!.length,
                     physics: const BouncingScrollPhysics(),

@@ -37,7 +37,7 @@ class ForgotPasswordPage extends StatelessWidget {
                 suffixIcon: Icons.email),
             SizedBox(height: SizeConfig.heightMultiplier * 1),
             Text(
-              'Upon providing your email address, you will receive a link to reset your password in your inbox.',
+              'Upon providing your email address, you will receive a link to reset your password in your digital mailbox.',
               style: TextStyle(
                   fontSize: SizeConfig.textMultiplier * 1.4,
                   color: Colors.grey.shade600,
