@@ -1,5 +1,3 @@
-# NudgeBuddy_CalTracker
-
 This project is being developed as part of my final year project for my university degree program. 
 
 # NUDGE BUDDY
