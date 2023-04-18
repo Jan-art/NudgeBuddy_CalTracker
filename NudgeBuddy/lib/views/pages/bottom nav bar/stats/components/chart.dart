@@ -107,7 +107,7 @@ class _GraphState extends State<Graph> {
           majorTickLines: const MajorTickLines(
             width: 0,
           ),
-          edgeLabelPlacement: EdgeLabelPlacement.shift,
+          edgeLabelPlacement: EdgeLabelPlacement.none,
           interval: 1),
       primaryYAxis: NumericAxis(
           minimum: 0,
