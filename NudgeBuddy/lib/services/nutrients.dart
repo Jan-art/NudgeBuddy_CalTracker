@@ -6,7 +6,7 @@ import 'package:NudgeBuddy/views/pages/bottom%20nav%20bar/stats/components/chart
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:get/get.dart';
 
-// STORES DATA FOR NUTRIENTS IN THE STATS SCREENS
+// STORES DATA FOR NUTRIENTS IN THE STATS SCREENS, THIS IS A SINGLETON CLASS SO THAT IT CAN BE ACCESSED FROM ANYWHERE IN THE APP - Allows to calculate user TDEE and macros based on selected weight goal
 //========================================================
 class NutrientService {
   //BMR

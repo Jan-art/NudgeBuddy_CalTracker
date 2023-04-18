@@ -84,14 +84,14 @@ class NotificationTile extends StatelessWidget {
               if (val == 0) {
                 //DELETE
                 Get.dialog(ConfirmationDialog(
-                    text: 'are you sure you want to delete the notification?',
+                    text: 'Are you sure you want to delete the notification?',
                     onConfirm: () =>
                         NotificationService.deleteNotification(data)));
               }
               if (val == 1) {
                 //DISABLE
                 Get.dialog(ConfirmationDialog(
-                    text: 'are you sure you want to disable the notification?',
+                    text: 'Are you sure you want to disable the notification?',
                     onConfirm: () =>
                         NotificationService.disableNotification(data)));
               }
