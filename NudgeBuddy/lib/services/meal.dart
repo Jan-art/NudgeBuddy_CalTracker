@@ -34,6 +34,7 @@ class MealService {
         'CreatedAt': mealCont.selectedDate.value.split(' ')[0],
       });
       await getTakenNutrients();
+      //await NutrientService.addKcalDatainFirebase(
       CustomSnackbar.showCustomSnackbar(false,
           'Well done on making time to nourish your body with a satisfying ${meal.type}. Keep up the healthy habits!');
       authCont.isLoading.value = false;
@@ -144,6 +145,7 @@ class MealService {
   //EDIT MEAL
   Future<void> editMeal(MealModel meal) async {
     final authCont = Get.find<AuthController>();
+    final mealCont = Get.find<MealCont>();
     try {
       authCont.isLoading.value = true;
       await FirebaseFirestore.instance
@@ -160,7 +162,7 @@ class MealService {
         'Fats': meal.fats,
         'Kcal': NutrientService.calculatKCAL(
             meal.fats!.toInt(), meal.carbs!.toInt(), meal.proteins!.toInt()),
-        'CreatedAt': DateTime.now().toString().split(' ')[0],
+        'CreatedAt': mealCont.selectedDate.value.split(' ')[0],
       });
       await getTakenNutrients();
       authCont.isLoading.value = false;
@@ -169,3 +171,5 @@ class MealService {
     }
   }
 }
+
+

@@ -92,7 +92,7 @@ class ProfilePage extends GetWidget<AuthController> {
                 CustomProfileButton(
                   onTap: () => Get.dialog(ConfirmationDialog(
                       text: 'Are you sure you want to delete your account?',
-                      onConfirm: () => controller.deleteAccount())),
+                      onConfirm: () => controller.deleteAccount(controller.userInfo.id!))),
                   text: 'Delete Account',
                 ),
                 SizedBox(height: SizeConfig.heightMultiplier * 1.5),

@@ -1,6 +1,7 @@
 import 'package:NudgeBuddy/constants/units.dart';
 import 'package:NudgeBuddy/controllers/auth.dart';
 import 'package:NudgeBuddy/controllers/kcal.dart';
+import 'package:NudgeBuddy/controllers/meal.dart';
 import 'package:NudgeBuddy/controllers/stats.dart';
 import 'package:NudgeBuddy/views/pages/bottom%20nav%20bar/stats/components/chart.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -123,13 +124,14 @@ class NutrientService {
   static addKcalDatainFirebase(int val) async {
     try {
       final uid = Get.find<AuthController>().userss!.uid;
-      final nowDate = DateTime.now().toString().split(' ')[0];
+      final mealCont = Get.find<MealCont>();
+      final nowDate = mealCont.selectedDate.value.split(' ') [0];
       await FirebaseFirestore.instance
           .collection('Users')
           .doc(uid)
           .collection('Kcal')
           .doc(nowDate)
-          .set({'Value': val, 'CreatedAt': DateTime.now().toString()});
+          .set({'Value': val, 'CreatedAt': mealCont.selectedDate.value});
       await getLastFourDaysKcal();
     } catch (e) {
       print(e);

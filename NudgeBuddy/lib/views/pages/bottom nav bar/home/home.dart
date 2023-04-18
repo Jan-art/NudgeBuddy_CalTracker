@@ -14,7 +14,7 @@ import 'components/meal_widget.dart';
 import 'components/row_info.dart';
 
 // HOMEPAGE CLASS - RENDERS HOMEPAGE OF THE APP
-// ============================================== 
+// ==============================================
 class HomePage extends StatelessWidget {
   HomePage({super.key});
   final authCont = Get.find<AuthController>();
@@ -101,34 +101,41 @@ class HomePage extends StatelessWidget {
               },
             ),
             SizedBox(height: SizeConfig.heightMultiplier * 2),
-            Center(
-              child: Container(
-                height: SizeConfig.heightMultiplier * 20,
-                width: SizeConfig.widthMultiplier * 80,
-                decoration: BoxDecoration(
-                    color: Colors.grey.shade200,
-                    borderRadius: BorderRadius.circular(20)),
-                padding: EdgeInsets.symmetric(
-                    horizontal: SizeConfig.widthMultiplier * 6,
-                    vertical: SizeConfig.heightMultiplier * 2),
-                child: Obx(
-                  () => ListView.builder(
-                    itemCount: authCont.homeTableKcalList.length,
-                    physics: const NeverScrollableScrollPhysics(),
-                    shrinkWrap: true,
-                    padding: EdgeInsets.zero,
-                    itemBuilder: (_, i) => RowInfo(
-                      title: i == 0
-                          ? 'Today'
-                          : dateFormat.format(DateTime.parse(
-                              authCont.homeTableKcalList[i]['Date'])),
-                      subtitle:
-                          "${authCont.homeTableKcalList[i]['Value']} kcal",
-                    ),
-                  ),
-                ),
-              ),
-            ),
+            Obx(() {
+              authCont.homeTableKcalList
+                  .sort((a, b) => a['Date'].compareTo(b['Date']));
+                 
+              return cont.selectedDate.value !=
+                      DateTime.now().toString().split(' ')[0]
+                  ? const SizedBox()
+                  : Center(
+                      child: Container(
+                        height: SizeConfig.heightMultiplier * 20,
+                        width: SizeConfig.widthMultiplier * 80,
+                        decoration: BoxDecoration(
+                            color: Colors.grey.shade200,
+                            borderRadius: BorderRadius.circular(20)),
+                        padding: EdgeInsets.symmetric(
+                            horizontal: SizeConfig.widthMultiplier * 6,
+                            vertical: SizeConfig.heightMultiplier * 2),
+                        child: ListView.builder(
+                          itemCount: authCont.homeTableKcalList.length,
+                          reverse: true,
+                          physics: const NeverScrollableScrollPhysics(),
+                          shrinkWrap: true,
+                          padding: EdgeInsets.zero,
+                          itemBuilder: (_, i) => RowInfo(
+                            title: i == authCont.homeTableKcalList.length - 1
+                                ? 'Today'
+                                : dateFormat.format(DateTime.parse(
+                                    authCont.homeTableKcalList[i]['Date'])),
+                            subtitle:
+                                "${authCont.homeTableKcalList[i]['Value']} kcal",
+                          ),
+                        ),
+                      ),
+                    );
+            }),
             SizedBox(height: SizeConfig.heightMultiplier * 15)
           ],
         ),

@@ -370,15 +370,18 @@ class AuthController extends GetxController {
   }
 
   //DELETE YOUR ACCOUNT
-  Future<void> deleteAccount() async {
+   Future<void> deleteAccount(String id) async {
     try {
       isLoading.value = true;
-      FirebaseFirestore.instance.collection('Users').doc(userss!.uid).delete();
+
       await userss!.delete();
+      FirebaseFirestore.instance.collection('Users').doc(id).delete();
       clearValues();
       Get.back();
       isLoading.value = false;
     } catch (e) {
+      isLoading.value = false;
+    CustomSnackbar.showCustomSnackbar(true, "$e".split("]")[1]);
       print(e);
     }
   }
