@@ -9,6 +9,9 @@ This is a nutrition tracker app built using the Flutter framework. The app helps
 The project was originally conceived as a web platform. However, in view of the specific functionality requirements, it was deemed necessary to transition to mobile app development. Consequently, the project underwent several restarts until reaching this current version.
 
 
+# PREVIEW IMAGES <img src="https://cdn3.emoji.gg/emojis/loading.gif" width = "22px" height="20px" alt="loading">
+
+
 # Features
 
 - **Email Authentication:** users can create an account, log in & log out, while their data is safely stored. 
