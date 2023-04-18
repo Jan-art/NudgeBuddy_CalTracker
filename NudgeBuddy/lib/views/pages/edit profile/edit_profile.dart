@@ -19,7 +19,7 @@ class EditProfile extends GetWidget<AuthController> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Edit Profile'),
+        title: const Text('EDIT PROFILE'),
       ),
       body: Column(
         children: [
@@ -111,7 +111,7 @@ class EditProfile extends GetWidget<AuthController> {
           ProfileOptions(
               title: 'Weight Goal',
               subtitle: controller.userInfo.weightGoal == 0
-                  ? 'No goal set'
+                  ? 'No Goal Set'
                   : '${controller.userInfo.weightGoal!} Kgs',
               onTap: () {
                 controller.weightVal.value =

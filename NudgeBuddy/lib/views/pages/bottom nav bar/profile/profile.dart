@@ -29,7 +29,7 @@ class ProfilePage extends GetWidget<AuthController> {
         backgroundColor: Colors.white,
         elevation: 0,
         foregroundColor: Colors.black,
-        title: const Text('Profile'),
+        title: const Text('PROFILE'),
         actions: [
           TextButton(
               onPressed: () => controller.onSignout(),
@@ -72,7 +72,7 @@ class ProfilePage extends GetWidget<AuthController> {
                 ///
                 CustomProfileButton(
                   onTap: () => Get.to(() => const EditProfile()),
-                  text: 'Edit Personal info',
+                  text: 'Edit Personal Info',
                 ),
                 SizedBox(height: SizeConfig.heightMultiplier * 1.5),
                 CustomProfileButton(
@@ -82,7 +82,7 @@ class ProfilePage extends GetWidget<AuthController> {
                 SizedBox(height: SizeConfig.heightMultiplier * 1.5),
                 CustomProfileButton(
                   onTap: () => Get.dialog(ConfirmationDialog(
-                      text: 'are you sure you want to delete your account?',
+                      text: 'Are you sure you want to delete your account?',
                       onConfirm: () => controller.deleteAccount())),
                   text: 'Delete Account',
                 ),

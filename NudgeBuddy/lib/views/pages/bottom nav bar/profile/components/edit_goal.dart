@@ -31,7 +31,7 @@ class EditGoalBS extends StatelessWidget {
                 padding: EdgeInsets.symmetric(
                     horizontal: SizeConfig.widthMultiplier * 5),
                 child: Text(
-                  isGoal ? "Select Goal" : "Select your activity",
+                  isGoal ? "Select Goal" : "Select your activity level",
                   style: TextStyle(
                       fontSize: SizeConfig.textMultiplier * 2,
                       fontWeight: FontWeight.w600),
