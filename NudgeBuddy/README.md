@@ -1,8 +1,8 @@
-# NudgeBuddyr
+# NudgeBuddy
 
-A new Flutter project.
+Nutrition App - Simple Calorie Tracker
 
-## Getting Started
+## Getting Started In Flutter
 
 This project is a starting point for a Flutter application.
 
