@@ -26,13 +26,12 @@ class Graph extends StatefulWidget {
 /// State class of the inversed numeric axis.
 class _GraphState extends State<Graph> {
   _GraphState();
-  TooltipBehavior? _tooltipBehavior; //(hover box)
+  
   @override
   void initState() {
     isYInversed = true;
     isXInversed = true;
-    _tooltipBehavior =
-        TooltipBehavior(enable: true, header: '', canShowMarker: false);
+    
     super.initState();
   }
 
@@ -122,7 +121,21 @@ class _GraphState extends State<Graph> {
           interval: widget.interval.toDouble(),
           majorTickLines: const MajorTickLines(size: 0)),
       series: getInversedNumericSeries(),
-      tooltipBehavior: _tooltipBehavior,
+      //Hover box
+      tooltipBehavior: TooltipBehavior(
+        enable: true,
+        builder: (data, point, series, pointIndex, seriesIndex) {
+          return Container(
+            height: SizeConfig.heightMultiplier * 3,
+            width: SizeConfig.widthMultiplier * 14,
+            decoration: BoxDecoration(
+              color: Colors.black87,
+              borderRadius: BorderRadius.circular(6)
+            ),
+            child: Center(child: Text(data.xValue.toString()+' : '+ data.yValue.toString(),style: TextStyle(fontSize: SizeConfig.textMultiplier*1.3,fontWeight: FontWeight.w500,color: Colors.white),)),
+          );
+        },
+      ),
     );
   }
 

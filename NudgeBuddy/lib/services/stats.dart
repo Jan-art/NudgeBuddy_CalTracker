@@ -92,5 +92,6 @@ class StatsService {
 
   static bool todayDate(String date) {
     return date.split(' ')[0] == DateTime.now().toString().split(' ')[0];
+    
   }
 }
