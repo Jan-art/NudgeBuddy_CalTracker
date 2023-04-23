@@ -30,9 +30,15 @@ class LocalNotificationsService {
     String body,
     bool isRepeat,
   ) async {
-    var androidDetails = const AndroidNotificationDetails(
-        "channel_id", "channel_name",
-        importance: Importance.max, priority: Priority.max);
+    var androidDetails =
+       AndroidNotificationDetails("channel_id", "channel_name",
+            importance: Importance.max,
+            priority: Priority.max,
+            styleInformation: BigTextStyleInformation(
+              body,
+              htmlFormatBigText: true,
+              contentTitle: title,
+            ));
     var iosDetails = const DarwinNotificationDetails();
     var generalNotificationsDetails =
         NotificationDetails(android: androidDetails, iOS: iosDetails);
