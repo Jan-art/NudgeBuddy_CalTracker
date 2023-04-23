@@ -3,7 +3,7 @@ import 'package:NudgeBuddy/models/onboarding.dart';
 import 'package:NudgeBuddy/utils/size_config.dart';
 import 'package:flutter/material.dart';
 
-//RENDER THE INDICATOR FOR THE ONBOARDING PAGE - THE 3 CIRCLES AT THE BOTTOM OF THE SCREEN
+//RENDER THE INDICATOR FOR THE ONBOARDING PAGE - THE 2 BARS AT THE BOTTOM OF THE SCREEN
 // ================================================================================================================
 class PageIndicator extends StatelessWidget {
   const PageIndicator({

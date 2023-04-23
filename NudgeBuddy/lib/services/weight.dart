@@ -6,7 +6,7 @@ import 'package:get/get.dart';
 
 import '../controllers/stats.dart';
 
-// STORES THE WEIGHT DATA OF THE USER FOR PROGRESS TRACKING SCREEN - USED ALONG WITH LOCAL NOTIFICATIONS TO REMIND THE USER TO WEIGH THEMSELVES
+// MANAGES CRUD OPERATIONS RELATED TO WEIGHT - USED ALONG WITH LOCAL NOTIFICATIONS TO REMIND THE USER TO WEIGH THEMSELVES
 // ================================================================================================================
 class WeightService {
   static Future<void> addGoalWeight(int weight) async {

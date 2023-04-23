@@ -3,7 +3,7 @@
 import 'package:NudgeBuddy/constants/units.dart';
 import 'package:NudgeBuddy/models/user_model.dart';
 import 'package:NudgeBuddy/utils/root.dart';
-import 'package:NudgeBuddy/views/widgets/custom_snakbar.dart';
+import 'package:NudgeBuddy/views/widgets/custom_snackbar.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -21,7 +21,7 @@ class AuthController extends GetxController {
   TextEditingController loginEmail = TextEditingController();
   TextEditingController loginPass = TextEditingController();
 
-  //VARIABLES
+  //OBSERVABLE VARIABLES 
   Rxn<PageController> pageController = Rxn<PageController>();
   RxBool isLoading = false.obs;
   RxList homeTableKcalList = [].obs;
@@ -279,7 +279,7 @@ class AuthController extends GetxController {
     }
   }
 
-  //CHAMGE WEIGHT
+  //CHANGE WEIGHT
   Future<void> changeWeight() async {
     try {
       isLoading.value = true;

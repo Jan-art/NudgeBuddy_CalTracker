@@ -1,5 +1,4 @@
 import 'package:NudgeBuddy/controllers/auth.dart';
-import 'package:NudgeBuddy/controllers/kcal.dart';
 import 'package:NudgeBuddy/controllers/meal.dart';
 import 'package:NudgeBuddy/controllers/stats.dart';
 import 'package:NudgeBuddy/views/pages/auth%20flow/onboarding/onboarding.dart';

@@ -4,7 +4,8 @@ import 'package:NudgeBuddy/views/pages/bottom%20nav%20bar/stats/components/chart
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:get/get.dart';
 
-// STORES DATA FOR SCREEN CONTAINING STATS OF THE USER - USED TO DISPLAY THE DATA IN THE CHARTS
+// Stats Service allows to get consumed calories and macros for the selected month
+// ================================================================================================================
 class StatsService {
   //GET FIRST AND LAST DATE OF MONTH
   static List<DateTime> getFirstAndLastDatesOfMonth(DateTime inputDate) {

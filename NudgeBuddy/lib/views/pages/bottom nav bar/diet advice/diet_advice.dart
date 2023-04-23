@@ -7,7 +7,7 @@ import 'package:get/instance_manager.dart';
 
 import 'components/tile.dart';
 
-// DIET ADVICE PAGE CLASS - RENDERS NUTRITION ADVICE PAGE
+// DIET ADVICE PAGE CLASS - RENDERS NUTRITION ADVICE PAGE AND LOOPS THROUGH THE LIST OF DIET ADVICE TILES
 // ================================================================================================================
 
 class DietAdvicePage extends StatelessWidget {

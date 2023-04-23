@@ -4,7 +4,7 @@ import 'package:NudgeBuddy/models/goals.dart';
 import 'package:NudgeBuddy/utils/size_config.dart';
 import 'package:NudgeBuddy/views/dialog/edit_gender.dart';
 import 'package:NudgeBuddy/views/dialog/edit_password.dart';
-import 'package:NudgeBuddy/views/pages/bottom%20nav%20bar/profile/components/edit_goal.dart';
+import 'package:NudgeBuddy/views/pages/edit%20profile/components/edit_goal.dart';
 import 'package:NudgeBuddy/views/pages/bottom%20nav%20bar/profile/components/options.dart';
 import 'package:NudgeBuddy/views/widgets/num_slider.dart';
 import 'package:flutter/material.dart';

@@ -10,7 +10,7 @@ import 'package:syncfusion_flutter_charts/charts.dart';
 
 import '../../../../../utils/size_config.dart';
 
-/// Renders the inversed numeric axis chart.
+/// Renders the inversed numeric axis chart for both calorie and weight tracking.
 class Graph extends StatefulWidget {
   /// Creates the inversed numeric axis sample.
   const Graph(Key? key, this.color, this.dataList, this.maxVal, this.interval)

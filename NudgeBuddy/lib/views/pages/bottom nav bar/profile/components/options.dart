@@ -2,7 +2,7 @@ import 'package:NudgeBuddy/constants/colors.dart';
 import 'package:NudgeBuddy/utils/size_config.dart';
 import 'package:flutter/material.dart';
 
-// PROFILE OPTIONS CLASS - USED TO SHOW THE OPTIONS IN THE PROFILE PAGE - NAME, EMAIL, PHONE NUMBER
+// PROFILE OPTIONS CLASS - USED TO SHOW THE OPTIONS IN THE PROFILE PAGE - NAME, EMAIL
 // ================================================================================================================
 class ProfileOptions extends StatelessWidget {
   const ProfileOptions({

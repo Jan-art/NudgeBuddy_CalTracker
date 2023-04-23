@@ -2,7 +2,7 @@ import 'package:NudgeBuddy/constants/colors.dart';
 import 'package:NudgeBuddy/utils/size_config.dart';
 import 'package:flutter/material.dart';
 
-// CUSTOM PROFILE BUTTON CLASS - RENDERS A CUSTOM BUTTON 
+// CUSTOM PROFILE BUTTON CLASS - RENDERS A CUSTOM BUTTON WITH A TEXT AND AN ARROW ICON
 // ================================================================================================================
 class CustomProfileButton extends StatelessWidget {
   const CustomProfileButton({

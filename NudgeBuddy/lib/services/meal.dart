@@ -3,12 +3,12 @@ import 'package:NudgeBuddy/controllers/auth.dart';
 import 'package:NudgeBuddy/controllers/meal.dart';
 import 'package:NudgeBuddy/models/meal_model.dart';
 import 'package:NudgeBuddy/services/nutrients.dart';
-import 'package:NudgeBuddy/views/widgets/custom_snakbar.dart';
+import 'package:NudgeBuddy/views/widgets/custom_snackbar.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:get/get.dart';
 import 'package:get/get_connect/http/src/utils/utils.dart';
 
-// STORE DATA FOR THE MEALS IN MEAL SCREEN. 
+// Performs all "crud" operations related to meals
 // ================================================================================================================
 class MealService {
   //ADD MEAL

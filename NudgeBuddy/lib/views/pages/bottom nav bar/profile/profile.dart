@@ -5,7 +5,7 @@ import 'package:NudgeBuddy/models/goals.dart';
 import 'package:NudgeBuddy/utils/size_config.dart';
 import 'package:NudgeBuddy/views/dialog/edit_gender.dart';
 import 'package:NudgeBuddy/views/dialog/edit_password.dart';
-import 'package:NudgeBuddy/views/pages/bottom%20nav%20bar/profile/components/edit_goal.dart';
+import 'package:NudgeBuddy/views/pages/edit%20profile/components/edit_goal.dart';
 import 'package:NudgeBuddy/views/pages/bottom%20nav%20bar/profile/components/options.dart';
 import 'package:NudgeBuddy/views/pages/edit%20profile/edit_profile.dart';
 import 'package:NudgeBuddy/views/pages/settings/settings.dart';
@@ -17,7 +17,7 @@ import 'package:url_launcher/url_launcher.dart';
 import '../../../widgets/num_slider.dart';
 import 'components/button.dart';
 
-// RENDERS THE PROFILE PAGE WITH THE USER'S PROFILE INFORMATION AND OPTIONS TO EDIT THEIR PROFILE
+// RENDERS THE PROFILE PAGE WITH THE USER'S PROFILE INFORMATION AND VARIOUS OPTIONS
 // ================================================================================================================
 class ProfilePage extends GetWidget<AuthController> {
   ProfilePage({super.key});

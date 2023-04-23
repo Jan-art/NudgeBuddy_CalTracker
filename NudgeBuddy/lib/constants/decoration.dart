@@ -1,4 +1,4 @@
-// Widget decoration styles;
+// Widget decoration styles for containers;
 //===================================================
 
 import 'package:flutter/material.dart';

@@ -9,7 +9,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
 
-// RENDER THE DIALOG THAT ALLOWS THE USER TO SCEDULE A NOTIFICATION REMINDER WITH A TITLE, TEXTBODY AND TIME
+// RENDER THE DIALOG THAT ALLOWS THE USER TO SCHEDULE A NOTIFICATION REMINDER WITH A TITLE, TEXTBODY AND TIME
 // ================================================================================================================
 class AddNotificationDialog extends StatelessWidget {
   AddNotificationDialog({super.key});

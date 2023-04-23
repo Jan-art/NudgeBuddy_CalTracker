@@ -8,7 +8,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:get/get.dart';
 import 'package:timezone/timezone.dart';
 
-// STORES THE NOTIFICATIONS DATA OF THE USER FOR NOTIFICATIONS SCREEN
+// Performs all "crud" operations related to notifications from the database
 // ================================================================================================================
 class NotificationService {
   static Future<void> addNotification(

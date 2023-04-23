@@ -7,7 +7,7 @@ import 'package:NudgeBuddy/services/meal.dart';
 import 'package:NudgeBuddy/utils/size_config.dart';
 import 'package:NudgeBuddy/views/widgets/custom_button.dart';
 import 'package:NudgeBuddy/views/widgets/custom_inputfield.dart';
-import 'package:NudgeBuddy/views/widgets/custom_snakbar.dart';
+import 'package:NudgeBuddy/views/widgets/custom_snackbar.dart';
 import 'package:NudgeBuddy/views/widgets/show_loading.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
