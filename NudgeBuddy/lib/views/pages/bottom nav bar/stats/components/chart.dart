@@ -26,7 +26,7 @@ class Graph extends StatefulWidget {
 /// State class of the inversed numeric axis.
 class _GraphState extends State<Graph> {
   _GraphState();
-  TooltipBehavior? _tooltipBehavior;
+  TooltipBehavior? _tooltipBehavior; //(hover box)
   @override
   void initState() {
     isYInversed = true;
@@ -100,19 +100,21 @@ class _GraphState extends State<Graph> {
         text: '',
       ),
       primaryXAxis: NumericAxis(
-          minimum: 0,
+          minimum: 1,
           maximum: 30,
-          labelStyle: const TextStyle(fontSize: 0.1, color: Colors.black),
+          labelStyle: const TextStyle(fontSize: 12, color: Colors.black),
           majorGridLines: const MajorGridLines(width: 1, color: Colors.black12),
           majorTickLines: const MajorTickLines(
             width: 0,
           ),
+          opposedPosition: false,
+          isInversed: false,
           edgeLabelPlacement: EdgeLabelPlacement.none,
           interval: 1),
       primaryYAxis: NumericAxis(
           minimum: 0,
           maximum: widget.maxVal,
-          majorGridLines: const MajorGridLines(width: 0),
+          majorGridLines: const MajorGridLines(width: 0.8),
           labelStyle: const TextStyle(
               fontSize: 14, color: Colors.black, fontFamily: 'Poppins'),
           numberFormat: NumberFormat.decimalPattern(),

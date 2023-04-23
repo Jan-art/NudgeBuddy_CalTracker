@@ -4,13 +4,15 @@ import 'package:NudgeBuddy/services/stats.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:get/get.dart';
 
+import '../controllers/stats.dart';
+
 // STORES THE WEIGHT DATA OF THE USER FOR PROGRESS TRACKING SCREEN - USED ALONG WITH LOCAL NOTIFICATIONS TO REMIND THE USER TO WEIGH THEMSELVES
 // ================================================================================================================
 class WeightService {
   static Future<void> addGoalWeight(int weight) async {
     final authCont = Get.find<AuthController>();
     try {
-      final nowDate = DateTime.now().toString();
+      final nowDate = Get.find<StatsCont>().selectedDate.value.split(' ')[0];
       authCont.isLoading.value = true;
 
       await FirebaseFirestore.instance
