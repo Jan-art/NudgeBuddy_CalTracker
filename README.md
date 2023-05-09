@@ -8,6 +8,10 @@ The project was originally conceived as a web platform. However, in view of the 
 
 
 # PREVIEW IMAGES <img src="https://cdn3.emoji.gg/emojis/loading.gif" width = "22px" height="20px" alt="loading">
+**Home Page**
+
+![image](https://github.com/Jan-art/NudgeBuddy_CalTracker/assets/71454686/107d675b-732c-46a6-bb4e-c5ef60630394)
+
 
 
 # Features
