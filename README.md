@@ -28,7 +28,7 @@ the app allows users to set dietary goals, such as weight gain, weight loss, or 
 
 - **Nutritional information:**  the app displays nutritional information for the food items that have been tracked as a total sum, including a display of calories consumed and remaining calories to be met for the user's daily caloric intake goal. 
 
-- **Weight Tracker:**  users can track changes in their weight over time.
+- **Weight Tracker:**  users can track changes in their weight over time. At the end of the week users will also be notified to input their weekly weight.
 
 - **Progress Tracker:**  users can view their caloric intake over time and check whether they have been consitent with their diet.
 
